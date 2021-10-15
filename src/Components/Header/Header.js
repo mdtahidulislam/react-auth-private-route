@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import useFirebase from '../../Hook/usefirebase';
+import useAuth from '../../Hook/useAuth';
 
 const Header = () => {
-    const { user, handleSignOut } = useFirebase()
+    const { user, handleSignOut } = useAuth()
     return (
         <div>
             {/* create Menu */}
