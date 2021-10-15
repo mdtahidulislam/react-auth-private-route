@@ -8,6 +8,7 @@ const Header = () => {
         <div>
             {/* create Menu */}
             <Link to='/home'>Home</Link>
+            <Link to='/shipping'>Shipping</Link>
             <Link to='/register'>Register</Link>
             <Link to='/login'>Login</Link>
             {user.email && <button onClick={handleSignOut}>Log out</button>}

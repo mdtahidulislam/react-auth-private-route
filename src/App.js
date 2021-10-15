@@ -9,6 +9,8 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import AuthProvider from './Context/AuthProvider';
+import Shipping from './Components/Shipping/Shipping';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
             <Route path='/home'>
               <Home></Home>
             </Route>
+            <PrivateRoute path='/shipping'>
+              <Shipping></Shipping>
+            </PrivateRoute>
             <Route path='/register'>
               <Register></Register>
             </Route>
